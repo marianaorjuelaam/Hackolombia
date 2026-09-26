@@ -1,0 +1,45 @@
+{
+  "locs_without_coords": [
+    "COJU",
+    "CONE",
+    "IAHS",
+    "IAPG",
+    "IAVI",
+    "ILAD",
+    "ILCT",
+    "ILGO",
+    "ILRT",
+    "LIRA",
+    "MNAM",
+    "MNGW",
+    "MNPI",
+    "NECC",
+    "NEHE",
+    "NEHR",
+    "WIGR",
+    "WILR"
+  ],
+  "soil_varies_within_loc": 0,
+  "envs_total": 1394,
+  "envs_weather_filled": 209,
+  "weather_fill_km_median": 43.60137488385737,
+  "weather_fill_km_p90": 115.43399237975048,
+  "envs_soil_from_other_loc": 32,
+  "filled_by_cluster": {
+    "C2": 209
+  },
+  "new_locs_by_year_using_neighbors": {
+    "2001": 57,
+    "2002": 38,
+    "2003": 43,
+    "2004": 41,
+    "2005": 30,
+    "2006": 33,
+    "2007": 40,
+    "2008": 36
+  },
+  "normal_source_counts_2008": {
+    "loc_history": 145,
+    "idw_3_neighbors": 36
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "C1": {
+    "pops": 499,
+    "pops_skipped": [],
+    "map_mismatch_pops": 0,
+    "residual_cells_filled_with_cluster_mean": 4763085,
+    "duplicate_line_ids_in_genotypes": 0,
+    "n_lines": 77398,
+    "n_parents": 260,
+    "parent_marker_inconsistencies": 5410,
+    "markers_maf_lt_0.01": 158,
+    "median_obs_snps_per_line": 69.0,
+    "median_informative_snps_per_pop": 877.0,
+    "lines_with_chr_without_obs_pct": 13.735497041267216,
+    "mask_validation": {
+      "pops": 63,
+      "cells": 103955,
+      "concordance": 0.7492376509066423,
+      "mean_abs_error": 0.28726378422477566,
+      "share_confident_cells": 0.7110095714491848,
+      "concordance_confident": 0.7973494261874019,
+      "concordance_uncertain": 0.5933412019538207,
+      "baseline_always_het_or_major": "\u22480.50 en F2"
+    },
+    "vs_official_imputed_C1": {
+      "pops": 80,
+      "official_na_frac": 0.14012006144405115,
+      "agreement_where_official_called": 0.9910455595563065
+    }
+  },
+  "C2": {
+    "pops": 500,
+    "pops_skipped": [],
+    "map_mismatch_pops": 0,
+    "residual_cells_filled_with_cluster_mean": 4794226,
+    "duplicate_line_ids_in_genotypes": 0,
+    "n_lines": 76635,
+    "n_parents": 258,
+    "parent_marker_inconsistencies": 5709,
+    "markers_maf_lt_0.01": 351,
+    "median_obs_snps_per_line": 68.0,
+    "median_informative_snps_per_pop": 680.0,
+    "lines_with_chr_without_obs_pct": 7.616624257845632,
+    "mask_validation": {
+      "pops": 63,
+      "cells": 98298,
+      "concordance": 0.7583979328165374,
+      "mean_abs_error": 0.2759839941656209,
+      "share_confident_cells": 0.7259761134509349,
+      "concordance_confident": 0.7946399832644939,
+      "concordance_uncertain": 0.612106679624816,
+      "baseline_always_het_or_major": "\u22480.50 en F2"
+    }
+  },
+  "C2_official_zip_is_valid": false
+}

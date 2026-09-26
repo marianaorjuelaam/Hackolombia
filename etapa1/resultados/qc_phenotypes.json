@@ -1,0 +1,198 @@
+{
+  "C1": {
+    "rows_raw": 536936,
+    "dup_cols_identical": {
+      "YEAR_x==YEAR_y": true,
+      "shorthand_x==shorthand_y": true,
+      "ProjectID==MAB_PROJECT_ID": true
+    },
+    "rows_missing_tester": 31300,
+    "line_ids_unified_from_2_formats": 667,
+    "exact_duplicate_rows_dropped": 0,
+    "values_out_of_bounds": {
+      "YLD_BE": 0,
+      "MST": 0,
+      "TWT": 0,
+      "STLP": 7,
+      "RTLP": 7,
+      "PHT": 0,
+      "EHT": 0,
+      "ERM": 467
+    },
+    "rows_without_traits_dropped": 94,
+    "locs_with_inconsistent_coords": 0,
+    "rows_clean": 536842,
+    "missing_rate": {
+      "YLD_BE": 0.039,
+      "MST": 0.026,
+      "TWT": 0.119,
+      "STLP": 0.319,
+      "RTLP": 0.569,
+      "PHT": 0.709,
+      "EHT": 0.779,
+      "ERM": 0.427
+    },
+    "n_lines": 77398,
+    "n_pops": 499,
+    "n_envs": 1185,
+    "years": {
+      "2000": 4554,
+      "2001": 5924,
+      "2002": 6596,
+      "2003": 12431,
+      "2004": 13385,
+      "2005": 11642,
+      "2006": 9274,
+      "2007": 6160,
+      "2008": 7432
+    },
+    "line_ids_with_hash_suffix": 1376,
+    "pops_in_multiple_years": 0,
+    "pops_with_multiple_testers": 0,
+    "pops_backcross_weighted_parents": 132
+  },
+  "C2": {
+    "rows_raw": 535340,
+    "dup_cols_identical": {
+      "YEAR_x==YEAR_y": true,
+      "shorthand_x==shorthand_y": true,
+      "ProjectID==MAB_PROJECT_ID": true
+    },
+    "rows_missing_tester": 9858,
+    "line_ids_unified_from_2_formats": 0,
+    "exact_duplicate_rows_dropped": 0,
+    "values_out_of_bounds": {
+      "YLD_BE": 0,
+      "MST": 14,
+      "TWT": 0,
+      "STLP": 13,
+      "RTLP": 29,
+      "PHT": 0,
+      "EHT": 0,
+      "ERM": 153
+    },
+    "rows_without_traits_dropped": 125,
+    "locs_with_inconsistent_coords": 0,
+    "rows_clean": 535215,
+    "missing_rate": {
+      "YLD_BE": 0.043,
+      "MST": 0.028,
+      "TWT": 0.125,
+      "STLP": 0.36,
+      "RTLP": 0.536,
+      "PHT": 0.712,
+      "EHT": 0.772,
+      "ERM": 0.381
+    },
+    "n_lines": 76635,
+    "n_pops": 500,
+    "n_envs": 1090,
+    "years": {
+      "2000": 2598,
+      "2001": 5695,
+      "2002": 7761,
+      "2003": 12615,
+      "2004": 14514,
+      "2005": 12338,
+      "2006": 6527,
+      "2007": 6051,
+      "2008": 8536
+    },
+    "line_ids_with_hash_suffix": 0,
+    "pops_in_multiple_years": 0,
+    "pops_with_multiple_testers": 0,
+    "pops_backcross_weighted_parents": 107
+  },
+  "parents_seen_before_by_year": {
+    "C1_2000": {
+      "pops": 26,
+      "ge1_parent_seen": 0,
+      "both_seen": 0
+    },
+    "C1_2001": {
+      "pops": 34,
+      "ge1_parent_seen": 27,
+      "both_seen": 8
+    },
+    "C1_2002": {
+      "pops": 41,
+      "ge1_parent_seen": 35,
+      "both_seen": 12
+    },
+    "C1_2003": {
+      "pops": 74,
+      "ge1_parent_seen": 65,
+      "both_seen": 26
+    },
+    "C1_2004": {
+      "pops": 76,
+      "ge1_parent_seen": 75,
+      "both_seen": 36
+    },
+    "C1_2005": {
+      "pops": 68,
+      "ge1_parent_seen": 65,
+      "both_seen": 26
+    },
+    "C1_2006": {
+      "pops": 58,
+      "ge1_parent_seen": 51,
+      "both_seen": 27
+    },
+    "C1_2007": {
+      "pops": 51,
+      "ge1_parent_seen": 49,
+      "both_seen": 12
+    },
+    "C1_2008": {
+      "pops": 71,
+      "ge1_parent_seen": 61,
+      "both_seen": 20
+    },
+    "C2_2000": {
+      "pops": 15,
+      "ge1_parent_seen": 0,
+      "both_seen": 0
+    },
+    "C2_2001": {
+      "pops": 32,
+      "ge1_parent_seen": 21,
+      "both_seen": 7
+    },
+    "C2_2002": {
+      "pops": 46,
+      "ge1_parent_seen": 37,
+      "both_seen": 9
+    },
+    "C2_2003": {
+      "pops": 75,
+      "ge1_parent_seen": 64,
+      "both_seen": 26
+    },
+    "C2_2004": {
+      "pops": 82,
+      "ge1_parent_seen": 79,
+      "both_seen": 29
+    },
+    "C2_2005": {
+      "pops": 74,
+      "ge1_parent_seen": 73,
+      "both_seen": 29
+    },
+    "C2_2006": {
+      "pops": 39,
+      "ge1_parent_seen": 39,
+      "both_seen": 23
+    },
+    "C2_2007": {
+      "pops": 51,
+      "ge1_parent_seen": 32,
+      "both_seen": 3
+    },
+    "C2_2008": {
+      "pops": 86,
+      "ge1_parent_seen": 72,
+      "both_seen": 25
+    }
+  }
+}
