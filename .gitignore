@@ -1,3 +1,13 @@
 # Large phenotype datasets
 Simplified Hackathon Dataset V3/C1_Phenotype_Data_V2.csv
 Simplified Hackathon Dataset V3/C2_Phenotype_Data_V2.csv
+.Rproj.user
+
+Simplified Hackathon Dataset V3/ImputedPopulationsC1/
+Simplified Hackathon Dataset V3/ImputedPopulationsC2/
+Simplified Hackathon Dataset V3/Unimputed_C1_Genome_Data/
+Simplified Hackathon Dataset V3/Unimputed_C2_Genome_Data/
+
+.opencode/
+
+doc_info/
