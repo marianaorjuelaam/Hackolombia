@@ -1,0 +1,59 @@
+{
+  "yield": {
+    "C1": {
+      "W1_lambda": 3000,
+      "W2_lambda": 300,
+      "W2_weight": 0.0,
+      "family_model": "B3",
+      "family_cols": [
+        "B3"
+      ]
+    },
+    "C2": {
+      "W1_lambda": 10000,
+      "W2_lambda": 100,
+      "W2_weight": 0.25,
+      "family_model": "B1+B3",
+      "family_cols": [
+        "B1",
+        "B3"
+      ]
+    }
+  },
+  "moisture": {
+    "C1": {
+      "W1_lambda": 1000,
+      "W2_lambda": 100,
+      "W2_weight": 0.25,
+      "family_model": "B1+B3",
+      "family_cols": [
+        "B1",
+        "B3"
+      ]
+    },
+    "C2": {
+      "W1_lambda": 1000,
+      "W2_lambda": 100,
+      "W2_weight": 0.25,
+      "family_model": "B3",
+      "family_cols": [
+        "B3"
+      ]
+    }
+  },
+  "uncertainty": {
+    "family_sd": {
+      "C1_0": 16.370362522821527,
+      "C1_1": 11.305818997186131,
+      "C1_2": 11.451155091098903,
+      "C2_0": 7.501482660598395,
+      "C2_1": 11.71826923464153,
+      "C2_2": 13.135336501449517
+    },
+    "within_sd": {
+      "C1": 6.121821254722761,
+      "C2": 5.385646119497938,
+      "calibration_factor": 1.12
+    }
+  }
+}
