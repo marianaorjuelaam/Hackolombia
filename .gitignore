@@ -10,6 +10,7 @@ Simplified Hackathon Dataset V3/Unimputed_C2_Genome_Data/
 
 .venv/
 .opencode/
+.carlocal/
 
 doc_info/
 DIGITALTOOL/data/processed/
