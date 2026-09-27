@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\maria\\\\OneDrive - purdue.edu\\\\Hackolombia\\\\Hackolombia\\\\etapa1\" -Force | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\maria\\\\OneDrive - purdue.edu\\\\Hackolombia\\\\Hackolombia\\\\etapa2\" -Force | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\maria\\\\OneDrive - purdue.edu\\\\Hackolombia\\\\Hackolombia\\\\Front\" -Force | ForEach-Object { $_.Name })",
+      "PowerShell(npm *)"
+    ]
+  }
+}

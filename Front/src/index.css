@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design Tokens ────────────────────────────────────────────────────────── */
+/*
+ * HSL channel values (no hsl() wrapper, space-separated).
+ * Consumed by tailwind.config.js as hsl(var(--token) / <alpha-value>).
+ * This means bg-surface-2/50, text-brand-400/70 etc. all work correctly.
+ *
+ * LIGHT MODE — warm off-white palette, premium agricultural enterprise feel
+ */
+:root {
+  /* Surfaces */
+  --surface-0:  36 24% 95%;       /* #f5f3ef  warm page background     */
+  --surface-1:   0  0% 100%;      /* #ffffff  sidebar / section bg     */
+  --surface-2:   0  0% 100%;      /* #ffffff  card background          */
+  --surface-3:  34 18% 93%;       /* #f0ede8  subtle hover surface     */
+  --surface-4:  33 15% 87%;       /* #e5e1da  interactive surface      */
+
+  /* Typography */
+  --text-primary:    24 11%  9%;  /* #1a1814  near-black warm          */
+  --text-secondary:  30  6% 34%;  /* #5c5751  warm mid-gray            */
+  --text-muted:      30  5% 60%;  /* #9e9890  muted warm               */
+
+  /* Borders */
+  --border-subtle:   33 14% 88%;  /* #e8e3dc  very light               */
+  --border-default:  33 11% 80%;  /* #d4cfc6  standard                 */
+
+  /* Brand green — deeper for light bg readability */
+  --brand-400:  142 76% 36%;      /* #16a34a                           */
+  --brand-500:  142 72% 29%;      /* #15803d                           */
+
+  /* Maize gold / amber */
+  --amber-400:   38 92% 44%;      /* #d97706                           */
+  --amber-500:   38 82% 36%;      /* #b45309                           */
+
+  /* Chart / SVG colors — full hex because SVG attrs don't use hsl() */
+  --chart-grid:   #e3dfd8;
+  --chart-tick:   #9e9890;
+  --chart-bg:     #ffffff;
+  --chart-border: #d5cfc6;
+  --chart-text:   #1a1814;
+  --chart-legend: #9e9890;
+  --ring-track:   #e3dfd8;
+
+  /* Scrollbar */
+  --scrollbar-track:  #ede9e4;
+  --scrollbar-thumb:  #c5bfb7;
+  --scrollbar-hover:  #b0a99f;
+}
+
+/*
+ * DARK MODE — deep charcoal palette, premium AI decision intelligence feel
+ */
+.dark {
+  --surface-0:  210 17%  5%;      /* #0a0c0e                          */
+  --surface-1:  213 17%  8%;      /* #111418                          */
+  --surface-2:  213 19% 12%;      /* #181d23                          */
+  --surface-3:  213 20% 15%;      /* #1e252d                          */
+  --surface-4:  213 21% 18%;      /* #252e38                          */
+
+  --text-primary:    210 42% 96%; /* #f0f4f8                          */
+  --text-secondary:  214 19% 62%; /* #8b9ab0                          */
+  --text-muted:      215 17% 35%; /* #4a5568                          */
+
+  --border-subtle:   210 25% 16%; /* #1e2832                          */
+  --border-default:  212 22% 21%; /* #2a3542                          */
+
+  --brand-400:  142 69% 58%;      /* #4ade80                          */
+  --brand-500:  142 76% 36%;      /* #22c55e                          */
+
+  --amber-400:   48 96% 56%;      /* #fbbf24                          */
+  --amber-500:   43 96% 48%;      /* #f59e0b                          */
+
+  --chart-grid:   #1e252d;
+  --chart-tick:   #8b9ab0;
+  --chart-bg:     #181d23;
+  --chart-border: #2a3542;
+  --chart-text:   #f0f4f8;
+  --chart-legend: #8b9ab0;
+  --ring-track:   #1e252d;
+
+  --scrollbar-track: #111418;
+  --scrollbar-thumb: #2a3542;
+  --scrollbar-hover: #3a4a5a;
+}
+
+/* ─── Base ──────────────────────────────────────────────────────────────────── */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Smooth theme transitions */
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  body {
+    background-color: hsl(var(--surface-0));
+    color: hsl(var(--text-primary));
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+  }
+
+  /* Smooth transitions on all themed elements */
+  .dark body,
+  body {
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track  { background: var(--scrollbar-track); }
+  ::-webkit-scrollbar-thumb  { background: var(--scrollbar-thumb); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-hover); }
+
+  /* Range slider */
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    background: hsl(var(--surface-4));
+    border-radius: 3px;
+    outline: none;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: hsl(var(--brand-400));
+    cursor: pointer;
+    border: 3px solid hsl(var(--surface-0));
+    box-shadow: 0 0 0 2px hsl(var(--brand-400) / 0.25);
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: hsl(var(--brand-400));
+    cursor: pointer;
+    border: 3px solid hsl(var(--surface-0));
+  }
+}
+
+/* ─── Utilities ─────────────────────────────────────────────────────────────── */
+@layer utilities {
+  /* Subtle grid overlay — works in both themes */
+  .bg-grid-subtle {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23808080' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Theme transition for individual elements */
+  .theme-transition {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+}
