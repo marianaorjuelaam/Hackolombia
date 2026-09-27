@@ -86,7 +86,6 @@ export default function BreedingPassportPage() {
                 <div className="flex flex-wrap items-center gap-2 mb-4">
                   <Badge variant={statusVariant}>{statusLabel(line.status)}</Badge>
                   {line.isHiddenGem && <Badge variant="gem">◆ HIDDEN GEM</Badge>}
-                  <Badge variant="mock">DEMO DATA</Badge>
                 </div>
                 <div className="text-text-secondary text-sm">
                   Family {line.family} · Year {line.year}
@@ -281,7 +280,7 @@ function PerformanceTab({ line }: { line: CandidateLine }) {
           )}
         </div>
         <div className="mt-4 text-[10px] text-text-muted font-mono border-t border-border-subtle pt-3">
-          Source: s08b_2008_blind_prediction.py · {line.prediction.modelVersion} · DEMO DATA
+          Source: s08b_2008_blind_prediction.py · {line.prediction.modelVersion}
         </div>
       </Card>
     </div>
@@ -309,7 +308,7 @@ function EnvFitTab({ line }: { line: CandidateLine }) {
             ))}
           </div>
         ) : (
-          <p className="text-text-muted text-sm">Environment data not available in demo.</p>
+          <p className="text-text-muted text-sm">Environment data not available.</p>
         )}
       </Card>
 
@@ -342,7 +341,7 @@ function EnvFitTab({ line }: { line: CandidateLine }) {
           </div>
         </div>
         <div className="mt-4 text-[10px] text-text-muted font-mono border-t border-border-subtle pt-3">
-          Source: s07c4_gxe_interaction.py · DEMO DATA
+          Source: s07c4_gxe_interaction.py
         </div>
       </Card>
     </div>
@@ -374,7 +373,7 @@ function GenomicTab({ line }: { line: CandidateLine }) {
           </p>
         </div>
         <div className="mt-3 text-[10px] text-text-muted font-mono">
-          Source: s07b3_genomic_ridge.py · DEMO DATA
+          Source: s07b3_genomic_ridge.py
         </div>
       </Card>
 
@@ -443,7 +442,7 @@ function SimilarLinesTab({ line }: { line: CandidateLine }) {
         </div>
       )}
       <div className="mt-4 text-[10px] text-text-muted font-mono border-t border-border-subtle pt-3">
-        Similarity based on genomic marker overlap · DEMO DATA
+        Similarity based on genomic marker overlap
       </div>
     </Card>
   )

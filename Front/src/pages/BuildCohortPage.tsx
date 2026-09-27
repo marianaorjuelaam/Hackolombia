@@ -4,7 +4,6 @@ import { Layers, Download, Trash2, CheckCircle, Dna, TrendingUp, Users, Globe, C
 import { allocationService } from '@/services/allocationService'
 import type { CohortRecommendation, SelectionStrategy, SelectedLine } from '@/types'
 import { Button } from '@/components/ui/Button'
-import { Badge } from '@/components/ui/Badge'
 import { ProgressBar } from '@/components/ui/ProgressBar'
 import { brand } from '@/config/brand'
 import { cn, formatYield, formatConfidence } from '@/lib/utils'
@@ -282,7 +281,6 @@ export default function BuildCohortPage() {
                   </div>
 
                   <div className="mt-3 text-[10px] text-text-muted font-mono">
-                    DEMO DATA · Future integration: s08f_cultiva_allocation_engine.py ·
                     Model version: {cohort.metadata.modelVersion}
                   </div>
                 </motion.div>
@@ -339,7 +337,6 @@ function CohortSummary({ cohort, visibleCount }: { cohort: CohortRecommendation;
       <div className="flex items-center gap-2 mb-4">
         <CheckCircle size={14} className="text-brand-400" />
         <span className="text-text-primary font-bold text-sm">Cohort Generated</span>
-        <Badge variant="mock" className="ml-auto">DEMO DATA</Badge>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">

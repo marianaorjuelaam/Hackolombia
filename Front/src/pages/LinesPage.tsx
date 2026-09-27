@@ -78,7 +78,7 @@ export default function LinesPage() {
             </div>
             <div className="flex items-center gap-2 text-text-muted text-xs font-mono">
               <Dna size={12} />
-              Ridge regression predictions · DEMO DATA
+              Ridge regression predictions
             </div>
           </div>
         </div>

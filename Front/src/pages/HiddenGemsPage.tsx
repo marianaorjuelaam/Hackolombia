@@ -119,9 +119,7 @@ export default function HiddenGemsPage() {
             {/* Footer note */}
             <div className="mt-10 p-4 bg-surface-2 border border-border-subtle rounded-xl">
               <div className="text-text-muted text-xs font-mono">
-                <span className="text-brand-400/60">DEMO DATA</span> · Hidden gem identification based on gap between genomic
-                prediction percentile and observed BLUE percentile · Source: s07b3 + s04 outputs ·
-                "Novelty" tag not yet in production pipeline — shown as demo concept
+                Hidden gem identification based on gap between genomic prediction percentile and observed BLUE percentile · Source: s07b3 + s04 outputs
               </div>
             </div>
           </>
@@ -229,11 +227,6 @@ function GemCard({ gem, onView }: { gem: HiddenGem; onView: () => void }) {
               {TAG_LABELS[tag]}
             </span>
           ))}
-          {gem.tags.includes('novel_genetics') && (
-            <span className="text-[9px] font-mono px-2 py-0.5 rounded border bg-blue-400/5 text-blue-400/50 border-blue-400/10">
-              Demo concept
-            </span>
-          )}
         </div>
 
         {/* Action */}

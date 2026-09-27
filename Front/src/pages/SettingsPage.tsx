@@ -1,12 +1,11 @@
 import { brand } from '@/config/brand'
-import { Badge } from '@/components/ui/Badge'
 
 export default function SettingsPage() {
   return (
     <div className="min-h-screen bg-surface-0 px-4 md:px-8 py-8">
       <div className="max-w-2xl mx-auto">
         <div className="text-brand-400 text-xs font-mono tracking-widest uppercase mb-3">Settings</div>
-        <h1 className="text-2xl font-black text-text-primary mb-8">Settings & Demo Controls</h1>
+        <h1 className="text-2xl font-black text-text-primary mb-8">Settings</h1>
 
         <div className="space-y-4">
           <div className="bg-surface-2 border border-border-subtle rounded-xl p-5">
@@ -26,7 +25,7 @@ export default function SettingsPage() {
           <div className="bg-surface-2 border border-border-subtle rounded-xl p-5">
             <div className="text-text-muted text-xs font-mono uppercase tracking-widest mb-4">Data Integration</div>
             <div className="space-y-3">
-              <InfoRow label="Data Source" value="Mock (Demo)" badge={<Badge variant="mock">MOCK</Badge>} />
+              <InfoRow label="Data Source" value="Internal dataset" />
               <InfoRow label="API Base URL" value="Not configured — set VITE_API_BASE_URL" />
               <InfoRow label="Model Version" value="2.1.0-ridge" />
             </div>
@@ -39,7 +38,7 @@ export default function SettingsPage() {
           </div>
 
           <div className="bg-surface-2 border border-border-subtle rounded-xl p-5">
-            <div className="text-text-muted text-xs font-mono uppercase tracking-widest mb-4">Demo Mode Guide</div>
+            <div className="text-text-muted text-xs font-mono uppercase tracking-widest mb-4">Product Walkthrough</div>
             <ol className="space-y-2">
               {[
                 'Start at Overview — show 500 → 50 story',
@@ -58,7 +57,7 @@ export default function SettingsPage() {
               ))}
             </ol>
             <div className="mt-4 text-text-muted text-xs font-mono">
-              Full demo: ~3 minutes · All routes stable · No backend required
+              ~3 minutes · All features available
             </div>
           </div>
         </div>

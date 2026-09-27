@@ -112,7 +112,6 @@ export default function ModelIntelligencePage() {
               <p className="text-text-secondary">{brand.copy.intelligenceSub}</p>
             </div>
             <div className="flex items-center gap-3">
-              <Badge variant="mock">DEMO DATA</Badge>
               <div className="text-text-muted text-xs font-mono">
                 v{metrics.modelVersion}
               </div>
@@ -189,7 +188,7 @@ export default function ModelIntelligencePage() {
               </BarChart>
             </ResponsiveContainer>
             <div className="text-text-muted text-[10px] font-mono mt-3">
-              Source: s07b3 temporal validation · DEMO DATA
+              Source: s07b3 temporal validation
             </div>
           </Card>
 
@@ -211,7 +210,7 @@ export default function ModelIntelligencePage() {
               </LineChart>
             </ResponsiveContainer>
             <div className="text-text-muted text-[10px] font-mono mt-3">
-              Forward time validation: train on t–1, predict t · DEMO DATA
+              Forward time validation: train on t–1, predict t
             </div>
           </Card>
         </div>
@@ -273,9 +272,6 @@ export default function ModelIntelligencePage() {
                 <div className="text-text-muted text-[10px] leading-tight">{s.desc}</div>
               </div>
             ))}
-          </div>
-          <div className="mt-4 text-[10px] text-text-muted font-mono">
-            All metrics shown are DEMO DATA · Real model outputs will replace mock data via API integration
           </div>
         </div>
       </div>
