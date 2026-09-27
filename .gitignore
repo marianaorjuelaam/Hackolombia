@@ -8,6 +8,8 @@ Simplified Hackathon Dataset V3/ImputedPopulationsC2/
 Simplified Hackathon Dataset V3/Unimputed_C1_Genome_Data/
 Simplified Hackathon Dataset V3/Unimputed_C2_Genome_Data/
 
+.venv/
 .opencode/
 
 doc_info/
+DIGITALTOOL/data/processed/
